@@ -31,7 +31,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm install
-      - run: nmp run lint
+      - run: npm run lint
 
   test:
     strategy:
@@ -46,7 +46,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm install
-      - run: nmp run test:unit
+      - run: npm run test:unit
         
   verify:
     strategy:
@@ -63,7 +63,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm install
-      - run: nmp -g install snyk
+      - run: npm -g install snyk
       - run: snyk test
       - run : snyk monitor
         
