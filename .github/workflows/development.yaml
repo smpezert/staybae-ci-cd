@@ -89,7 +89,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-      - run: sed -i 's/%%APP_VERSION%%/${{steps.build_version.outputs.current_tag}}-wip/g' src/config/AppVersion.tsx
+      - run: sed -i 's//%%APP_VERSION%%/${{steps.build_version.outputs.current_tag}}-wip/g' src/config/AppVersion.tsx
       - run: npm ci
       - run: npm run build
         
