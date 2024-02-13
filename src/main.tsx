@@ -7,7 +7,8 @@ import '../styles/global.scss';
 import { BrowserRouter } from 'react-router-dom';
 import { FavouriteContextProvider } from './context/FavouritesContext';
 
-const BASE_URL = process.env.NODE_ENV !== 'development' ? '/staybae-ci-cd/' : '/';
+const BASE_URL =
+  process.env.NODE_ENV !== 'development' ? '/staybae-ci-cd/' : '/';
 
 async function enableMocking() {
   // if (process.env.NODE_ENV !== 'development') {
