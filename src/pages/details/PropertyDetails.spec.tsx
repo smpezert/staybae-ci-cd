@@ -19,7 +19,9 @@ describe('Property Details Page', () => {
         </Routes>
       </MemoryRouter>,
     );
-    expect(getByTestId('property-desc')).toHaveTextContent('Two bedroom house in LA');
+    expect(getByTestId('property-desc')).toHaveTextContent(
+      'Two bedroom house in LA',
+    );
   });
 
   it('it should render with long description', () => {
@@ -30,6 +32,8 @@ describe('Property Details Page', () => {
         </Routes>
       </MemoryRouter>,
     );
-    expect(getByTestId('property-desc')).toHaveTextContent(SINGLE_PROPERTY('1').description);
+    expect(getByTestId('property-desc')).toHaveTextContent(
+      SINGLE_PROPERTY('1').description,
+    );
   });
 });
