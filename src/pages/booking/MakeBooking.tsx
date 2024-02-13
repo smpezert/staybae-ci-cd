@@ -72,8 +72,8 @@ const MakeBooking = () => {
                                 <div className="flex flex-col">
                                     <div
                                         className={`flex flex-row p-8 justify-between rounded-t-lg ${payType === 'full'
-                                                ? 'border-2 border-black'
-                                                : 'border border-top-gray-200'
+                                            ? 'border-2 border-black'
+                                            : 'border border-top-gray-200'
                                             }`}>
                                         <div className="flex flex-col space-y-1">
                                             <span className="font-medium">Pay in full</span>
@@ -90,8 +90,8 @@ const MakeBooking = () => {
                                     </div>
                                     <div
                                         className={`flex flex-row p-8 justify-between ${payType === 'klarna'
-                                                ? 'border-2 border-black'
-                                                : 'border border-b-gray-200'
+                                            ? 'border-2 border-black'
+                                            : 'border border-b-gray-200'
                                             } `}>
                                         <div className="flex flex-col space-y-1">
                                             <span className="font-medium">
