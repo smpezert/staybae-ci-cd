@@ -182,7 +182,9 @@ const PropertyDetails = () => {
             </div>
 
             <button
-              onClick={() => navigate('/book', { state: { propertyDetails: data } })}
+              onClick={() =>
+                navigate('/book', { state: { propertyDetails: data } })
+              }
               className="bg-pink-600 text-white w-full rounded-lg py-3 mt-10 hover:bg-pink-400">
               Reserve
             </button>
@@ -240,7 +242,9 @@ const PropertyDetails = () => {
             </div>
           </div>
           <button
-            onClick={() => navigate('/book', { state: { propertyDetails: data } })}
+            onClick={() =>
+              navigate('/book', { state: { propertyDetails: data } })
+            }
             className="bg-pink-600 text-white rounded-lg mr-4 p-2 hover:bg-pink-400">
             Reserve
           </button>
