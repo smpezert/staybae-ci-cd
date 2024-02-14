@@ -1,4 +1,5 @@
 # Staybae UI
+You can navigate to the application by clicking on this link https://smpezert.github.io/staybae-ci-cd/
 
 ## Getting Started
 
